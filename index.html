@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/styles.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="css/bootstrap.min.css" media="screen" title="no title" charset="utf-8">
+    <script src="js/jquery-3.1.0.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>To Do List!!!!</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Things to do today</h1>
+      <h2>add an activity</h2>
+
+      <form>
+        <div class="form-group">
+          <label for="title">title</label>
+          <input id="title" class="form-control" type="text">
+        </div>
+        <div class="form-group">
+          <label for="location">location</label>
+          <input id="location" class="form-control" type="text">
+        </div>
+        <div class="form-group">
+          <label for="startTime">time activity starts</label>
+          <input id="startTime" class="form-control" type="text">
+        </div>
+        <div class="form-group">
+          <label for="duration">duration of activity</label>
+          <input id="duration" class="form-control" type="text">
+        </div>
+        <div class="form-group">
+          <label for="notes">notes</label>
+          <input id="notes" class="form-control" type="text">
+        </div>
+        <div class="show-activity">
+          <p>Title: <span class="title"></span></p>
+          <p>location: <span class="location"></span></p>
+          <p>startTime: <span class="startTime"></span></p>
+          <p>duration: <span class="duration"></span></p>
+          <p>notes: <span class="notes"></span></p>
+        </div>
+        <button type="submit" class="btn-lg btn-success" name="button">Add activity</button>
+      </form>
+
+      <h2>Activities</h2>
+      <ul id ="activities">
+      </ul>
+    </div>
+  </body>
+</html>

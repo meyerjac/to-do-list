@@ -1,0 +1,13 @@
+.show-activity {
+  display: none;
+}
+
+/*.activities {
+  cursor: pointer;
+  color: #0088cc;
+}*/
+
+.activity:hover {
+  text-decoration: underline;
+  color: green;
+}

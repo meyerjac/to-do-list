@@ -11,42 +11,46 @@
   <body>
     <div class="container">
       <h1>Things to do today</h1>
-      <h2>add an activity</h2>
+      <h2>Add an activity</h2>
 
       <form>
         <div class="form-group">
-          <label for="title">title</label>
+          <label for="title">Title</label>
           <input id="title" class="form-control" type="text">
         </div>
         <div class="form-group">
-          <label for="location">location</label>
+          <label for="location">Location</label>
           <input id="location" class="form-control" type="text">
         </div>
         <div class="form-group">
-          <label for="startTime">time activity starts</label>
+          <label for="startTime">Start time</label>
           <input id="startTime" class="form-control" type="text">
         </div>
         <div class="form-group">
-          <label for="duration">duration of activity</label>
+          <label for="duration">Duration</label>
           <input id="duration" class="form-control" type="text">
         </div>
         <div class="form-group">
-          <label for="notes">notes</label>
+          <label for="notes">Notes</label>
           <input id="notes" class="form-control" type="text">
         </div>
         <div class="show-activity">
           <p>Title: <span class="title"></span></p>
           <p>location: <span class="location"></span></p>
-          <p>startTime: <span class="startTime"></span></p>
-          <p>duration: <span class="duration"></span></p>
-          <p>notes: <span class="notes"></span></p>
+          <p>Start Time: <span class="startTime"></span></p>
+          <p>Duration: <span class="duration"></span></p>
+          <p>Notes: <span class="notes"></span></p>
+
         </div>
         <button type="submit" class="btn-lg btn-success" name="button">Add activity</button>
       </form>
 
-      <h2>Activities</h2>
+      <h2>Activities:</h2>
+      <h5>(Double click to remove)</h5>
       <ul id ="activities">
       </ul>
+      <!-- <button id="remove"type="submit" class="btn-sm btn-danger" name="button">Task Complete</button> -->
+
     </div>
   </body>
 </html>

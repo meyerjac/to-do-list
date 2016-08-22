@@ -11,3 +11,7 @@
   text-decoration: underline;
   color: green;
 }
+
+#remove {
+  display: none;
+}

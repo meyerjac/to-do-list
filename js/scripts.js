@@ -10,10 +10,8 @@ Activity.prototype.all = function(){
   return "Do the " + this.actTitle + " at the " + this.actLocation + " at " + this.startTime;
 }
 
-
 $(document).ready(function() {
   $("form").submit(function(event){
-
 
     var inputTitle = $("input#title").val();
     var inputLocation = $("input#location").val();
@@ -32,12 +30,27 @@ $(document).ready(function() {
     $(".location").text(newActivity.actLocation);
     $(".startTime").text(newActivity.startTime);
     $(".duration").text(newActivity.duration);
-      $(".notes").text(newActivity.notes);
+    $(".notes").text(newActivity.notes);
+    // $("#remove").show();
+
     });
 
-    $("input#Title").val(" ");
+  //   $("#remove").click(function() {
+  //     $(".show-activity").hide();
+  //     $("li").last().hide();
+  //
+  // });
+
+  $("li").dblclick(function() {
+    $(".show-activity").hide();
+    $(this).hide();
+
+});
+
+
+    $("input#title").val(" ");
     $("input#location").val(" ");
-    $("input#Time").val(" ");
+    $("input#startTime").val(" ");
     $("input#duration").val(" ");
     $("input#notes").val(" ");
 
